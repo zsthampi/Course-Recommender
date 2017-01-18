@@ -15,3 +15,14 @@ List of Project Ideas
 	- Currently, people try out different courses at the start of semester, to get a feel of the class 
 	- Is there any way we could provide better suggestions and reviews to students who are looking for it? (Especially students in their first semester)
 	- How does a fresher determine the courses that could be beneficial for his choice of specialization/career? 
+	
+	
+	Target Users: 
+	1. Freshers (CSC Masters Students).
+	2. Currently enrolled (subsequent semesters).
+	
+	Baseline. 
+	1. Which course is better/ easier/ quality/ balance/ project-oriented/ value for money for a particular specialization. 
+	2. Which are the fundamental courses one should take during the first semester (covers pre-requisites?). 
+	3. How often is a course offered ? (special courses)
+	
