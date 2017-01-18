@@ -1,1 +1,13 @@
 List of Project Ideas
+=====================
+
+1. Simple ways to draw a graph online 
+	- It is a requirement in Algorithm/Graph related Computer Science courses 
+	- draw.io covers most of the requirements
+	- not much scope of research/improvement
+
+2. Time scheduler for a group
+	- Find free time slots of a group by comparing their calendars 
+	- Find if library rooms are available for grabs in the free hours easily
+	- Prior notifications, if library rooms are being booked out (say at 80% of available)
+
