@@ -11,3 +11,7 @@ List of Project Ideas
 	- Find if library rooms are available for grabs in the free hours easily
 	- Prior notifications, if library rooms are being booked out (say at 80% of available)
 
+3. Better Course Reviews and suggestions at NCSU
+	- Currently, people try out different courses at the start of semester, to get a feel of the class 
+	- Is there any way we could provide better suggestions and reviews to students who are looking for it? (Especially students in their first semester)
+	- How does a fresher determine the courses that could be beneficial for his choice of specialization/career? 
