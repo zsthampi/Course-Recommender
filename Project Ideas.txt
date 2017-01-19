@@ -26,3 +26,9 @@ List of Project Ideas
 	2. Which are the fundamental courses one should take during the first semester (covers pre-requisites?). 
 	3. How often is a course offered ? (special courses)
 	
+4. A study on "Contact Us" on websites and services
+	- Rewind 10 years, there were email IDs and telephone numbers on Contact Us page for almost every website 
+	- Gradually it changed to forms for getting data 
+	- Then, we saw an advent of automated voice messages to address concerns on telecom/banking websites
+	- Recently, I tried to report an unfair charge on my UBER account, and they gave me credits for the charged amount instantly. ABSOLUTELY NO QUESTIONS ASKED! Do companies want to do away with allocating resources on solving issues? (Often petty), or answering questions? (Often asked a 100 times over)
+	- Can we come up with a general solution for "Contact Us" which can be applied to software services. 
