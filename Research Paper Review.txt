@@ -1,0 +1,17 @@
+1. Farzan, Rosta, and Peter Brusilovsky. "Social navigation support in a course recommendation system." International Conference on Adaptive Hypermedia and Adaptive Web-Based Systems. Springer Berlin Heidelberg, 2006.
+
+- Based on social navigation mechanism (link data from all users to improve the system)
+- Discusses about Implicit Feedback (number of clicks on a page, time spent on planning and execution of students) to improve the recommendation system 
+- Takes in two factors : 1. Contribution to students career goals 2. Workload of the course	
+
+2. Chu, K., Maiga Chang, and Y. Hsia. "Designing a course recommendation system on web based on the students’ course selection records." World conference on educational multimedia, hypermedia and telecommunications. Vol. 2003. No. 1. 2003.
+
+- Prediction mechanism : Integrates data mining and graph theory 
+- Considers the following criteria : teachers (who teaches), time (when), easy or difficult (easy to pass?)
+
+3. Chen, Chih-Ming, Hahn-Ming Lee, and Ya-Hui Chen. "Personalized e-learning system using item response theory." Computers & Education 44.3 (2005): 237-255.
+
+- System based on Item Response Theory for adaptive learning
+- Too technical for me to understand 
+
+
