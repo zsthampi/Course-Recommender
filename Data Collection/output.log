@@ -1,0 +1,518 @@
+ID : CSC 111
+TITLE : Intro to Computing: Python
+DESCRIPTION : Computation problem solving through writing Python programs. Particular elements include: careful development of Python programs from specifications; documentation and style; appropriate use of control structures, data types and subprograms; abstractions and verification; engineering applications.
+PRE-REQUISITES : C: [E 115 or COS 100] and MA 141; R: Civil, Construction, and Environmental Engineering Majors Only
+OFFERED : {'Spring 2017': [u'Wright,David R', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn']}
+DISTANCE EDUCATION : False
+
+ID : CSC 113
+TITLE : Introduction to Computing - MATLAB
+DESCRIPTION : Problem solving through writing MATLAB programs. Particular elements include: careful development of MATLAB programs from specifications; documentation and style; appropriate use of control structures, data types and subprograms; abstractions and verification; engineering applications.
+PRE-REQUISITES : Corequisite: [E 115 or COS 100] and [MA 121 or MA 131 or MA 141]
+OFFERED : {'Spring 2017': [u'Battestilli,Tzvetelina', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn']}
+DISTANCE EDUCATION : False
+
+ID : CSC 116
+TITLE : Introduction to Computing - Java
+DESCRIPTION : An introductory course in computing in Java. Emphasis on algorithm development and problem solving. Careful and methodical development of Java applications and applets from specifications; documentation and style; appropriate use of control structures; classes and methods; data types and data abstraction; object-oriented programming and design; graphical user interface design.
+PRE-REQUISITES : Corequisite: [E115 or PAMS 100] and [MA 121 or MA 131 or MA 141]
+OFFERED : {'Spring 2017': [u'Schmidt,Jessica Young', u'Balik,Suzanne M', u'Schmidt,Jessica Young', u'Balik,Suzanne M', u'King,Jason Tyler', u'King,Jason Tyler', u'Battestilli,Tzvetelina', u'Glatz,Michelle Anne', u'Schmidt,Jessica Young']}
+DISTANCE EDUCATION : True
+
+ID : CSC 200
+TITLE : Introduction to Computers and Their Uses
+DESCRIPTION : Survey of basic principles of computer hardware, communications, operating systems, microcomputer issues, security, impact on society, system development, and use in organizations. Hands-on use of software, including operating system commands, wordprocessing, spreadsheets, and database managers. Demonstration and application of current end-user applications. May not be used by CSC major as a restricted elective.
+PRE-REQUISITES : None
+OFFERED : {'Spring 2017': [u'Marini,ToniAnn', u'Lasher,Dana Alfred', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn', u'Marini,ToniAnn']}
+DISTANCE EDUCATION : False
+
+ID : CSC 216
+TITLE : Programming Concepts - Java
+DESCRIPTION : The second course in computing, intended for majors. Emphasis is placed on software system design and testing; encapsulation; polymorphism; composition; inheritance; linear data structures; specification and implementation of finite-state machines; interpretation of inductive definitions [functions and data types]; and resource management.
+PRE-REQUISITES : CSC 116 with a grade of C or b
+OFFERED : {'Spring 2017': [u'Heckman,Sarah Smith', u'Schmidt,Jessica Young', u'Heckman,Sarah Smith', u'Heckman,Sarah Smith', u'Heckman,Sarah Smith', u'Heckman,Sarah Smith', u'Heckman,Sarah Smith', u'Heckman,Sarah Smith', u'Heckman,Sarah Smith', u'Heckman,Sarah Smith', u'Perry,Jo Ellen', u'Tetterton,James C', u'Perry,Jo Ellen', u'Tetterton,James C', u'Krute,Linda D']}
+DISTANCE EDUCATION : True
+
+ID : CSC 226
+TITLE : Discrete Mathematics for Computer Scientists
+DESCRIPTION : Propositional logic and the predicate calculus. Logic gates and circuits. Methods of proof. Elementary set theory. Mathematical induction. Recursive definitions and algorithms. Solving recurrences. The analysis of algorithms and asymptotic growth of functions. Elementary combinatorics. Introduction to graph theory. Ordered sets, including posets and equivalence relations. Introduction to formal languages and automata.
+PRE-REQUISITES : MA 101 or equivalent completed in high school ; CSC,CSU Majors and minors;CPE,CPU Majo
+OFFERED : {'Spring 2017': [u'Scafuro,Alessandra', u'Barnes,Tiffany M', u'Watkins,Alan W']}
+DISTANCE EDUCATION : True
+
+ID : CSC 230
+TITLE : C and Software Tools
+DESCRIPTION : Details of C programming as compared with Java; Lexical structure, syntax, semantics, and pragmatics [idioms, common uses] of C; Stages of compliation, linking and execution; Strings, arrays, structures, pointers, and memory management; C libraries;Tools for design, maintenance, and debugging of programs; Separate compliation, modular programming; Integrated development environments.
+PRE-REQUISITES : CSC 216 with a C or better and CSC or CSU Majors and Minors.
+OFFERED : {'Spring 2017': [u'Sturgill,David Brian', u'Balik,Suzanne M', u'Sturgill,David Brian']}
+DISTANCE EDUCATION : True
+
+ID : CSC 236
+TITLE : Computer Organization and Assembly Language for Computer Scientists
+DESCRIPTION : Computer architecture topics required by professional software developers, including binary and hexadecimal numbers, hardware component organization, machine instruction sets, assembler language programming, linking assembler language with high-level languages, program testing, computer hardware design issues, computer software design issues, and trends in current computer design.
+PRE-REQUISITES : CSC 216 with a C or better and CSC or CSU Majors and Minors.
+OFFERED : {'Spring 2017': [u'Lasher,Dana Alfred', u'Tseng,Hung-Wei', u'Lasher,Dana Alfred']}
+DISTANCE EDUCATION : True
+
+ID : CSC 246
+TITLE : Concepts and Facilities of Operating Systems for Computer Scientists
+DESCRIPTION : Fundamental concepts of computer operating systems for computer scientists, including memory management, file systems, process management, distributed systems, deadlocks, and basic security and system accounting.
+PRE-REQUISITES : CSC 230; Corequisite: CSC 236; CSC and CSU Majors and Mino
+OFFERED : {'Spring 2017': [u'Sturgill,David Brian', u'Watkins,Alan W']}
+DISTANCE EDUCATION : True
+
+ID : CSC 281
+TITLE : Foundations of Interactive Game Design
+DESCRIPTION : Surveys history, technology, narrative, ethics, and design of interactive computer games. Work in teams to develop novel game designs and computer games. Introduction to the interplay of narrative, technology, rule systems, play and culture in the creation of interactive games. Programming experience not required. Enrollment restricted to students with at least sophomore status.
+PRE-REQUISITES : None
+OFFERED : {'Spring 2017': [u'Martens,Chris']}
+DISTANCE EDUCATION : False
+
+ID : CSC 295
+TITLE : Competitive Problem Solving
+DESCRIPTION : This course uses competitive problem solving to reinforce and strengthen fundamental skills in programming, algorithm development, communication and teamwork. At each class meeting, we will focus on solving a handful of new problems, working individually in groups to design, implement and test our solutions.
+PRE-REQUISITES : Departmental Approval Required
+OFFERED : {'Spring 2017': [u'Sturgill,David Brian']}
+DISTANCE EDUCATION : False
+
+ID : CSC 316
+TITLE : Data Structures for Computer Scientists
+DESCRIPTION : Abstract data types; abstract and implementation-level views of data types. Linear and branching data structures, including stacks, queues, trees, heaps, hash tables, graphs, and others at discretion of instructor. Best, worst, and average case asymptotic time and space complexity as a means of formal analysis of iterative and recursive algorithms.
+PRE-REQUISITES : CSC 216 and CSC 226 with a grade of C or better; CSC, CSU Majors and Minors and CPE Majo
+OFFERED : {'Spring 2017': [u'King,Jason Tyler', u'Bahler,Dennis R', u'Rouskas,Georgios']}
+DISTANCE EDUCATION : True
+
+ID : CSC 326
+TITLE : Software Engineering
+DESCRIPTION : Application of product engineering methods to software: quality assurance, project management, requirements analysis, specifications, design, development, testing, production and maintenance.
+PRE-REQUISITES : CSC 230 and either CSC 314 or CSC 316
+OFFERED : {'Spring 2017': [u'Stolee,Kathryn Thomasset', u'Stolee,Kathryn Thomasset', u'Stolee,Kathryn Thomasset', u'Stolee,Kathryn Thomasset', u'Stolee,Kathryn Thomasset', u'Stolee,Kathryn Thomasset']}
+DISTANCE EDUCATION : False
+
+ID : CSC 333
+TITLE : Automata, Grammars, and Computability
+DESCRIPTION : Study of three classical formal models of computation--finite state machines, context-free grammars, and Turing machines--and the corresponding families of formal languages. Power and limitations of each model. Parsing. Non-determinism. The Halting Problem and undecidability. The classes P and NP, and NP-completeness.
+PRE-REQUISITES : Grade of C or better in CSC 226, CSC Majors or 2.75 GPA
+OFFERED : {'Spring 2017': [u'Doyle,Jon', u'Sullivan,Vida Blair Dowling', u'Samatova,Nagiza Faridovna']}
+DISTANCE EDUCATION : True
+
+ID : CSC 379
+TITLE : Ethics in Computing
+DESCRIPTION : Discussion of the concern for the way in which computers pose new ethical questions or pose new versions of standard moral problems and dilemmas. Study of ethical concepts to guide the computer professional. Computer professional codes of ethics. Use of case studies to relate to ethical theory. Ethical and legal use of software. Conflicts of interest.
+PRE-REQUISITES : Junior standing, CSC Majors or 2.7 minimum GPA
+OFFERED : {'Spring 2017': [u'Wright,David R']}
+DISTANCE EDUCATION : False
+
+ID : CSC 401
+TITLE : Data and Computer Communications Networks
+DESCRIPTION : Basic concepts of data communication networking and computer communications architectures, including packet/circuit/virtual-circuit switching, layered communication architecture and OSI layers, general description of DLC, network and transport layers, some detailed protocol study of Ethernet, ATM and TCP/IP. Credit is not allowed for both CSC 401 and ECE 407.
+PRE-REQUISITES : ST 370 and CSC 246
+OFFERED : {'Spring 2017': [u'Thuente,David J.']}
+DISTANCE EDUCATION : False
+
+ID : CSC 405
+TITLE : Introduction to Computer Security
+DESCRIPTION : Basic concepts and techniques in information security and management such as risks and vulnerabilities, applied cryptography, program security, malicious software, authentication, access control, operating systems security, multilevel security, trusted operating systems, database security, inference control, physical security, and system assurance and evaluation. Coverage of high-level concepts such as confidentiality, integrity, and availability applied to hardware, software, and data.
+PRE-REQUISITES : CSC 246
+OFFERED : {'Spring 2017': [u'Kapravelos,Alexandros']}
+DISTANCE EDUCATION : False
+
+ID : CSC 411
+TITLE : Introduction to Artificial Intelligence
+DESCRIPTION : Overview and definitions of Artificial Intelligence [AI]. Search, including depth-first and breadth-first techniques with backtracking. Knowledge representation with emphasis on logical methods, Horn databases, resolution, quantification, unification, skolemization and control issues; non-monotonic reasoning; frames; semantic nets. AI systems, including planning, learning, natural language and expert systems. An AI programming language may be taught at the instructor's discretion.
+PRE-REQUISITES : CSC 316
+OFFERED : {'Spring 2017': [u'Chi,Min']}
+DISTANCE EDUCATION : False
+
+ID : CSC 416
+TITLE : Introduction to Combinatorics
+DESCRIPTION : Basic principles of counting: addition and multiplication principles, generating functions, recursive methods, inclusion-exclusion, pigeonhole principle; basic concepts of graph theory: graphs, digraphs, connectedness, trees; additional topics from:Polya theory of counting, Ramsey theory; combinatorial optimization - matching and covering, minimum spanning trees, minimum distance, maximum flow; sieves; mobius inversion; partitions; Gaussian numbers and q-analogues; bijections and involutions; partially ordered sets.
+PRE-REQUISITES : MA 225 or CSC 226
+OFFERED : {'Spring 2017': [u'Liu,Ricky Ini']}
+DISTANCE EDUCATION : False
+
+ID : CSC 422
+TITLE : Automated Learning and Data Analysis
+DESCRIPTION : Introduction to the problems and techniques for automated discovery of knowledge in databases. Topics include representation, evaluation, and formalization of knowledge for discovery; classification, prediction, clustering, and association methods.Selected applications in commerce, security, and bioinformatics. Students cannot get credit for both CSC 422 and CSC 522.
+PRE-REQUISITES : ST 370 and MA 305, and a grade of C- or better in either CSC 226 or LOG 201
+OFFERED : {'Spring 2017': [u'Vatsavai,Ranga Raju']}
+DISTANCE EDUCATION : False
+
+ID : CSC 428
+TITLE : Introduction to Numerical Analysis II
+DESCRIPTION : Computational procedures including direct and iterative solution of linear and nonlinear equations, matrices and eigenvalue calculations, function approximation by least squares, smoothing functions, and minimax approximations.
+PRE-REQUISITES : MA 405 and programming language proficiency; MA [CSC] 427 is not a p
+OFFERED : {'Spring 2017': [u'Papp,David']}
+DISTANCE EDUCATION : False
+
+ID : CSC 453
+TITLE : Software for Wireless Sensor Systems
+DESCRIPTION : Development of software for wireless computer systems. Software designs for applications and networking in this environment, including algorithms for ad hoc discovery, routing, and secure data transfer. Software interface to related sensors and subsystems including global positioning system. Algorithms for power management. Programming required.
+PRE-REQUISITES : [CSC 246 or ECE 306] and CSC 230 and CSC 316
+OFFERED : {'Spring 2017': [u'Shahzad,Muhammad']}
+DISTANCE EDUCATION : False
+
+ID : CSC 462
+TITLE : Advanced Computer Graphics Projects
+DESCRIPTION : Principles of computer graphics with emphasis on three-dimensional graphics. Topics include: 3-D projections and transformations, curves and surfaces, color and texture, animation, visualization, and global illumination techniques. Programming project required.
+PRE-REQUISITES : CSC 461, CSC Majo
+OFFERED : {'Spring 2017': [u'Watson,Benjamin Allen']}
+DISTANCE EDUCATION : False
+
+ID : CSC 482
+TITLE : Advanced Computer Game Projects
+DESCRIPTION : Principles of computer game development with emphasis on 3D first-person game engines. Topics include: advanced character behavior control, procedural content generation, large scale mulit-player game design and infrastructure, serious games for education, training and other applications, the game production pipeline and project built on top of a commercial game engine. Consideration of the game production pipeline, including project pitches, requirements and design detail. Programming project with written and oral reporting is required. Enrollment open to CSC majors only.
+PRE-REQUISITES : CSC 481
+OFFERED : {'Spring 2017': [u'Roberts,David L', u'Roberts,David L']}
+DISTANCE EDUCATION : False
+
+ID : CSC 484
+TITLE : Building Game AI
+DESCRIPTION : In this course we will examine Artificial Intelligence [AI] techniques that are used in the design of computer games. We will look at techniques for game playing as well as the design of AI opponents tasked with creating "good experiences" for players. The course will begin with a discussion of general AI, common algorithms, data structures, and representations. From there, we will cover topics in character movement, pathfinding, decision making, strategy, tactics, and learning. In a sequence of programming assignments students will create increasingly sophisticated AI implementations. Students will also critically review the projects conducted by graduate students enrolled in CSC584. CSC majors only. Students cannot get credit for both CSC 484 and CSC 584.
+PRE-REQUISITES : CSC 316
+OFFERED : {'Spring 2017': [u'Roberts,David L']}
+DISTANCE EDUCATION : False
+
+ID : CSC 492
+TITLE : Senior Design Project
+DESCRIPTION : Application of software engineering principles and basic computer science to the total development of a software system. Consideration of the software system design process, including requirements and design detail. Development and evaluation of a prototype accomplished through design team activity. Comprehensive written and oral project report is required. Open to CSC majors. Restricted to students with 6 hours of Computer Science Restricted Elective.
+PRE-REQUISITES : CSC 326 ; CSC Majo
+OFFERED : {'Spring 2017': [u'Battestilli,Tzvetelina', u'Heil,Margaret Rose Scaturro', u'Heil,Margaret Rose Scaturro', u'Heckman,Sarah Smith', u'Sturgill,David Brian', u'Heil,Margaret Rose Scaturro', u'Heil,Margaret Rose Scaturro', u'Heckman,Sarah Smith', u'Sturgill,David Brian', u'Battestilli,Tzvetelina']}
+DISTANCE EDUCATION : False
+
+ID : CSC 495
+TITLE : Data Driven Decision Making
+DESCRIPTION : Prerequisites: CSC316 and should have had instruction in Python or java; sql would be good but not necessary ... Description: This course will provide the students with an understanding of the criteria required in decision-making including quantifying stakeholder value, dealing with uncertainty and risk, and critical problem-solving methodologies. Understanding and qualifying data sources, use of structured and unstructured data, and unstructured text analytics will be used to provide input into the decision making process. Students will learn how data can be transformed into business intelligence [BI] while participating in an action learning setting. Focus on exploring the decisions processes of Data Sciences field.
+PRE-REQUISITES : Computer Science Majors<p>Departmental Approval Required
+OFFERED : {'Spring 2017': [u'Kowolenko,Michael D.']}
+DISTANCE EDUCATION : False
+
+ID : CSC 499
+TITLE : Independent Research in Computer Science
+DESCRIPTION : Independent investigation of a research problem under faculty supervision. Departmental Approval Required. Individualized/Independent Study and Research courses require a Course Agreement for Students Enrolled in Non-Standard Courses be completed by the student and faculty member prior to registration by the department.
+PRE-REQUISITES : None
+OFFERED : {'Spring 2017': [u'Adams,Barbara J', u'Tuazama,Zelda', u'Heckman,Sarah Smith']}
+DISTANCE EDUCATION : False
+
+ID : CSC 501
+TITLE : Operating Systems Principles
+DESCRIPTION : Fundamental issues related to the design of operating systems. Process scheduling and coordination, deadlock, memory management and elements of distributed systems.
+PRE-REQUISITES : CSC 246, CSC 316 and MA 421
+OFFERED : {'Spring 2017': [u'Gu,Xiaohui']}
+DISTANCE EDUCATION : False
+
+ID : CSC 505
+TITLE : Design and Analysis Of Algorithms
+DESCRIPTION : Algorithm design techniques: use of data structures, divide and conquer, dynamic programming, greedy techniques, local and global search. Complexity and analysis of algorithms: asymptotic analysis, worst case and average case, recurrences, lower bounds, NP-completeness. Algorithms for classical problems including sorting, searching and graph problems [connectivity, shortest paths, minimum spanning trees].
+PRE-REQUISITES : CSC 316 and CSC 226
+OFFERED : {'Spring 2017': [u'Stallmann,Matthias F.M.', u'Heber,Steffen']}
+DISTANCE EDUCATION : True
+
+ID : CSC 510
+TITLE : Software Engineering
+DESCRIPTION : An introduction to software life cycle models; size estimation; cost and schedule estimation; project management; risk management; formal technical reviews; analysis, design, coding and testing methods; configuration management and change control; and software reliability estimation. Emphasis on large development projects. An individual project required following good software engineering practices throughout the semester.
+PRE-REQUISITES : CSC 316 and CSC 226
+OFFERED : {'Spring 2017': [u'Menzies,Timothy James', u'Dagnino,Aldo']}
+DISTANCE EDUCATION : True
+
+ID : CSC 517
+TITLE : Object-Oriented Design and Development
+DESCRIPTION : The design of object-oriented systems, using principles such as the GRASP principles, and methodologies such as CRC cards and the Unified Modeling Language [ULM]. Requirements analysis. Design patterns Agile Methods. Static vs. dynamic typing. Metaprogramming. Open-source development practices and tools. Test-first development. Project required, involving contributions to an open-source software project.
+PRE-REQUISITES : CSC 326 or ECE 309
+OFFERED : {'Spring 2017': [u'Gehringer,Edward F.', u'Gehringer,Edward F.']}
+DISTANCE EDUCATION : True
+
+ID : CSC 519
+TITLE : DevOps: Modern Software Engineering Practices
+DESCRIPTION : Modern software development organizations require entire teams of DevOps to automate and maintain software engineering processes and infrastructure vital to the organization. In this course, you will gain practical exposure to the skills, tools, and knowledge needed in automating software engineering processes and infrastructure. Students will have the chance to build new or extend existing software engineering tools and design a DevOps pipeline.
+PRE-REQUISITES : CSC 510 or [graduate or senior standing with at least a 3.0 GPA] and good knowledge of at least one high level programming languag
+OFFERED : {'Spring 2017': [u'Parnin,Christopher Joseph']}
+DISTANCE EDUCATION : False
+
+ID : CSC 520
+TITLE : Artificial Intelligence I
+DESCRIPTION : Introduction to and overview of artificial intelligence. Study of AI programming language such as LISP or PROLOG. Elements of AI problem-solving technique. State spaces and search techniques. Logic, theorem proving and associative databases. Introduction to knowledge representation, expert systems and selected topics including natural language processing, vision and robotics.
+PRE-REQUISITES : CSC 316 and either CSC 226 or LOG 201 or LOG 335 or background in symbolic logic
+OFFERED : {'Spring 2017': [u'Lynch PhD,Collin F.', u'Lynch PhD,Collin F.']}
+DISTANCE EDUCATION : True
+
+ID : CSC 522
+TITLE : Automated Learning and Data Analysis
+DESCRIPTION : Introduction to the problems and techniques for automated discovery of knowledge in databases. Topics include representation, evaluation, and formalization of knowledge for discovery; classification, prediction, clustering, and association methods.Selected applications in commerce, security, and bioinformatics. Students cannot get credit for both CSC 422 and CSC 522.
+PRE-REQUISITES : CSC 226 or LOG 201, ST 370, MA 305
+OFFERED : {'Spring 2017': [u'Vatsavai,Ranga Raju']}
+DISTANCE EDUCATION : False
+
+ID : CSC 540
+TITLE : Database Management concepts and Systems
+DESCRIPTION : Advanced database concepts. Logical organization of databases: the entity-relationship model; the relational data model and its languages. Functional dependencies and normal forms. Design, implementation, and optimization of query languages; security and integrity, consurrency control, transaction processing, and distributed database systems.
+PRE-REQUISITES : CSC 316
+OFFERED : {'Spring 2017': [u'Ogan,Kemafor']}
+DISTANCE EDUCATION : False
+
+ID : CSC 541
+TITLE : Advanced Data Structures
+DESCRIPTION : Complex and specialized data structures relevant to design and development of effective and efficient software. Hardware characteristics of storage media. Primary file organizations. Hashing functions and collision resolution techniques. Low level and bit level structures including signatures, superimposed coding, disjoint coding and Bloom filters. Tree and related structures including AVL trees, B*trees, tries and dynamic hashing techniques.
+PRE-REQUISITES : CSC 316
+OFFERED : {'Spring 2017': [u'Ogan,Kemafor']}
+DISTANCE EDUCATION : False
+
+ID : CSC 547
+TITLE : Cloud Computing Technology
+DESCRIPTION : Study of cloud computing principles, architectures, and actual implementations. Students will learn how to critically evaluate cloud solutions, how to construct and secure a private cloud computing environment based on open source solutions, and how to federate it with external clouds. Performance, security, cost, usability, and utility of cloud computing solutions will be studied both theoretically and in hands-on exercises. Hardware-, infrastructure-, platform-, software-, security-, and high-performance computing - "as-a-service".
+PRE-REQUISITES : CSC 501 and ECE/CSC 570
+OFFERED : {'Spring 2017': [u'Vouk,Mladen A', u'Streck,John P']}
+DISTANCE EDUCATION : False
+
+ID : CSC 554
+TITLE : Human-Computer Interaction
+DESCRIPTION : Basic theory and concepts of human-computer interaction. Human and computational aspects. Cognitive engineering. Practical HCI skills. Significant historical case studies. Current technology and future directions in user interface development.
+PRE-REQUISITES : CSC 316
+OFFERED : {'Spring 2017': [u'St. Amant,Robert A']}
+DISTANCE EDUCATION : False
+
+ID : CSC 562
+TITLE : Introduction to Game Engine Design
+DESCRIPTION : This course offers an advanced discussion of topics in computer graphics, with an emphasis on rendering techniques and GPU shader programming used in computer game engine design. Students are required to implement a medium-size game program that includes modeling and rendering, 2D physics, and animation of dynamic objects. Students will learn about GPU basics, mathematics of transformations, visual appearance properties, texturing, global illumination, and toon shading in computer games.
+PRE-REQUISITES : CSC 561 or CSC 461 or equivalent course from a previous university
+OFFERED : {'Spring 2017': [u'Watson,Benjamin Allen']}
+DISTANCE EDUCATION : False
+
+ID : CSC 565
+TITLE : Graph Theory
+DESCRIPTION : Basic concepts of graph theory. Trees and forests. Vector spaces associated with a graph. Representation of graphs by binary matrices and list structures. Traversability. Connectivity. Matchings and assignment problems. Planar graphs. Colorability. Directed graphs. Applications of graph theory with emphasis on organizing problems in a form suitable for computer solution.
+PRE-REQUISITES : CSC 226 or MA 351.
+OFFERED : {'Spring 2017': [u'Savage,Carla Diane']}
+DISTANCE EDUCATION : False
+
+ID : CSC 568
+TITLE : Enterprise Storage Architecture
+DESCRIPTION : An introduction to storage systems architecture in an enterprise. Begins with a review of the individual components of a system [eg, hard disk drives, network interfaces], and shows how to aggregate those into storage systems. Tradeoffs involving factors such as cost, complexity, availability, power and performance. Discussion of information management strategies, including data migration. Guest lectures by representatives from local industry. Students work in teams on a semester-long project.
+PRE-REQUISITES : CSC 246 and CSC 401 and CSC 316
+OFFERED : {'Spring 2017': [u'Freeh,Vincent W']}
+DISTANCE EDUCATION : False
+
+ID : CSC 570
+TITLE : Computer Networks
+DESCRIPTION : General introduction to computer networks. Discussion of protocol principles, local area and wide area networking, OSI stack, TCP/IP and quality of service principles. Detailed discussion of topics in medium access control, error control coding, and flow control mechanisms. Introduction to networking simulation, security, wireless and optical networking.
+PRE-REQUISITES : ECE 206 or CSC 312, ST 371, CSC 258 and Senior standing or Graduate standing
+OFFERED : {'Spring 2017': [u'Guvenc,Ismail']}
+DISTANCE EDUCATION : False
+
+ID : CSC 573
+TITLE : Internet Protocols
+DESCRIPTION : Principles and issues underlying provision of wide area connectivity through interconnection of autonomous networks. Internet architecture and protocols today and likely evolution in future. Case studies of particular protocols to demonstrate how fundamental principles applied in practice. Selected examples of networked clinet/server applications to motivate the functional requirements of internetworking. Project required.
+PRE-REQUISITES : CSC/ECE 570
+OFFERED : {'Spring 2017': [u'Harfoush,Khaled Abdel Hamid']}
+DISTANCE EDUCATION : False
+
+ID : CSC 574
+TITLE : Computer and Network Security
+DESCRIPTION : Security policies, models, and mechanisms for secrecy, integrity, and availability. Basic cryptography and its applications; operating system models and mechanisms for mandatory and discretionary controls; introduction to database security; securityin distributed systems; network security [firewalls, IPsec, and SSL]; and control and prevention of viruses and other rogue programs.
+PRE-REQUISITES : [CSC 316] and [CSC 401 or CSC/ECE 570]
+OFFERED : {'Spring 2017': [u'Reeves,Douglas Stephen']}
+DISTANCE EDUCATION : False
+
+ID : CSC 575
+TITLE : Introduction to Wireless Networking
+DESCRIPTION : Introduction to cellular communications, wireless local area networks, ad-hoc and IP infrastructures. Topics include: cellular networks, mobility mannagement, connection admission control algorithms, mobility models, wireless IP networks, ad-hoc routing, sensor networks, quality of service, and wireless security.
+PRE-REQUISITES : ECE/CSC 570
+OFFERED : {'Spring 2017': [u'Sichitiu,Mihail Lorin', u'Sichitiu,Mihail Lorin']}
+DISTANCE EDUCATION : True
+
+ID : CSC 576
+TITLE : Networking Services: QoS, Signaling, Processes
+DESCRIPTION : Topics related to networking services, signaling for setting up networking services, such as SIP and IMS, networking architectures for providing QoS for networking services, such as MPLS, DiffServ and RAC, signaling protocols for setting up QoS connections in the transport stratum, such as LDP and RSVP-TE, video-based communications, and capacity planning models for dimensioning services.
+PRE-REQUISITES : CSC/ECE 570
+OFFERED : {'Spring 2017': [u'Perros,Harilaos George']}
+DISTANCE EDUCATION : False
+
+ID : CSC 579
+TITLE : Introduction to Computer Performance Modeling
+DESCRIPTION : Workload characterization, collection and analysis of performance data, instrumentation, tuning, analytic models including queuing network models and operational analysis, economic considerations.
+PRE-REQUISITES : CSC 312 or ECE 206 and MA 421
+OFFERED : {'Spring 2017': [u'Rouskas,Georgios', u'Rouskas,Georgios']}
+DISTANCE EDUCATION : True
+
+ID : CSC 580
+TITLE : Numerical Analysis I
+DESCRIPTION : Algorithm behavior and applicability. Effect of roundoff errors, systems of linear equations and direct methods, least squares via Givens and Householder transformations, stationary and Krylov iterative methods, the conjugate gradient and GMRES methods, convergence of method.
+PRE-REQUISITES : MA 405; MA 425 or MA 511; high-level computer languag
+OFFERED : {'Spring 2017': [u'Ipsen,Ilse']}
+DISTANCE EDUCATION : False
+
+ID : CSC 584
+TITLE : Building Game AI
+DESCRIPTION : In this course we will examine Artificial Intelligence [AI] techniques that are used in the design of computer games. We will look at techniques for game playing as well as the design of AI opponents tasked with creating "good experiences" for players. The course will begin with a discussion of general AI, common algorithms, data structures, and representations. From there, we will cover topics in character movement, pathfinding, decision making, strategy, tactics, and learning. In a sequence of programming assignments students will create increasingly sophisticated AI implementations. Students will also critically review the projects conducted by graduate students enrolled in CSC584. CSC majors only. Students cannot get credit for both CSC 484 and CSC 584.
+PRE-REQUISITES : CSC 316
+OFFERED : {'Spring 2017': [u'Roberts,David L']}
+DISTANCE EDUCATION : False
+
+ID : CSC 591
+TITLE : Algorithms for Data Guided Business Intelligence
+DESCRIPTION : DISTANCE EDUCATION COURSE: Details for DE tuition and fee charges, please see https://treasurer.ofb.ncsu.edu/cashier/tuition/de.ph
+PRE-REQUISITES : ONLY on campus students with graduate standing in Computer Networking [Computer Science or Electrical Engineering] or Computer Science may register in this course.<p>Departmental Approval Required
+OFFERED : {'Spring 2017': [u'Samatova,Nagiza Faridovna']}
+DISTANCE EDUCATION : True
+
+ID : CSC 600
+TITLE : Computer Science Graduate Orientation
+DESCRIPTION : Introduction for new graduate students to [a] information about graduate program, department, and university resources, and [b] research projects conducted by CSC faculty.
+PRE-REQUISITES : None
+OFFERED : {'Spring 2017': [u'Rouskas,Georgios']}
+DISTANCE EDUCATION : True
+
+ID : CSC 630
+TITLE : Master's Independent Study
+DESCRIPTION : Individual investigation of topics under the direction of member[s] of the graduate faculty.
+PRE-REQUISITES : None
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 690
+TITLE : Master's Examination
+DESCRIPTION : For students in non thesis master's programs who have completed all other requirements of the degree except preparing for and taking the final master's exam.
+PRE-REQUISITES : Master's studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 693
+TITLE : Master's Supervised Research
+DESCRIPTION : Instruction in research and research under the mentorship of a member of the Graduate Faculty.
+PRE-REQUISITES : Master's studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 695
+TITLE : Master's Thesis Research
+DESCRIPTION : Thesis research.
+PRE-REQUISITES : Master's studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 699
+TITLE : Master's Thesis Preparation
+DESCRIPTION : For students who have completed all credit hour requirements and full-time enrollment for the master's degree and are writing and defending their thesis.
+PRE-REQUISITES : Master's studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 705
+TITLE : Operating Systems Security
+DESCRIPTION : Fundamentals and advanced topics in operating system [OS] security. Study OS level mechanisms and policies in investigating and defending against real-world attacks on computer systems, such as self-propagating worms, stealthy rootkits and large-scale botnets. OS security techniques such as authentication, system call monitoring, as well as memory protection. Introduce recent advanced techniques such as system-level randomization and hardware virtualization.
+PRE-REQUISITES : CSC 501
+OFFERED : {'Spring 2017': [u'Enck,William H']}
+DISTANCE EDUCATION : False
+
+ID : CSC 714
+TITLE : Real Time Computer Systems
+DESCRIPTION : Design and implementation of computer systems required to provide specific response times. Structure of a real-time kernel, fixed and dynamic priority scheduling algorithms, rate monotonic scheduling theory, priority inheritance protocols, real-timebenchmarks, case study of a real-time kernel.
+PRE-REQUISITES : CSC 451 or CSC 501
+OFFERED : {'Spring 2017': [u'Mueller,Rainer Frank']}
+DISTANCE EDUCATION : False
+
+ID : CSC 720
+TITLE : Artificial Intelligence II
+DESCRIPTION : A second course in artificial intelligence emphasizing advanced concepts of AI including logic programming, automatic programming, natural language understanding, visual perception by machine, learning and inference, intelligent computer-aided instruction, knowledge representation, robotics and other topics to be chosen by instructor. Students asked to write programs in AI programming language such as LISP and PROLOG.
+PRE-REQUISITES : CSC 520
+OFFERED : {'Spring 2017': [u'Doyle,Jon']}
+DISTANCE EDUCATION : False
+
+ID : CSC 724
+TITLE : Advanced Distributed Systems
+DESCRIPTION : Principles in the design and implementation of modern distributed systems; recent techniques used by real-world distributed systems such as peer-to-peer file sharing, enterprise data center, and internet search engines; state-of-the-art architectures, algorithms, and performance evaluation methodologies in distributed systems.
+PRE-REQUISITES : CSC 501 or equivalent. Programming in C++ or Java in Unix environmen
+OFFERED : {'Spring 2017': [u'Gu,Xiaohui']}
+DISTANCE EDUCATION : False
+
+ID : CSC 762
+TITLE : Computer Simulation Techniques
+DESCRIPTION : Basic discrete event simulation methodology: random number generators, simulation designs, validation, analysis of simulation output. Applications to various areas of scientific modeling. Simulation language such as SLAM and GPSS. Computer assignments and projects.
+PRE-REQUISITES : ST 512 and a scientific programming languag
+OFFERED : {'Spring 2017': [u'Liu,Yunan']}
+DISTANCE EDUCATION : False
+
+ID : CSC 766
+TITLE : Code Optimization for Scalar and Parallel Programs
+DESCRIPTION : Advanced research issues in code optimization for scalar and parallel programs; program analysis, scalar and parallel optimizations as well as various related advanced topics.
+PRE-REQUISITES : CSC 512, or CSC 548, or CSC 501
+OFFERED : {'Spring 2017': [u'Shen,Xipeng']}
+DISTANCE EDUCATION : False
+
+ID : CSC 773
+TITLE : Advanced Topics in Internet Protocols
+DESCRIPTION : Cutting-edge concepts and technologies to support internetworking in general and to optimize the performance of the TCP/IP protocol suite in particular. Challenges facing and likely evolution for next generation intenetworking technologies. This course investigates topics that include, but may be not limited to: Internet traffic measurement, characteriztion and modeling, traffic engineering, network-aware applications, quality of service, peer-to-peer systems, content-distribution networks, sensor networks, reliable multicast, and congestion control.
+PRE-REQUISITES : CSC/ECE 573
+OFFERED : {'Spring 2017': [u'Harfoush,Khaled Abdel Hamid']}
+DISTANCE EDUCATION : False
+
+ID : CSC 776
+TITLE : Design and Performance Evaluation of Network Systems and Services
+DESCRIPTION : Introduction to the design and performance evaluation of network services. Topics include top-down network design based on requirements, end-to-end services and network system architecture, service level agreements, quantitative performance evaluation techniques. Provides quantitative skills on network service traffic and workload modeling, as well as, service applications such as triple play, internet [IPTV], Peer-to-peer [P2P], voice over IP [VoIP], storage, network management, and access services.
+PRE-REQUISITES : CSC[ECE] 570 and CSC[ECE] 579
+OFFERED : {'Spring 2017': [u'Eun,Do Young']}
+DISTANCE EDUCATION : False
+
+ID : CSC 780
+TITLE : Numerical Analysis II
+DESCRIPTION : Approximation and interpolation, Fast Fourier Transform, numerical differentiation and integration, numerical solution of initial value problems for ordinary differential equations.
+PRE-REQUISITES : MA 580
+OFFERED : {'Spring 2017': [u'Alexanderian,Alen']}
+DISTANCE EDUCATION : False
+
+ID : CSC 791
+TITLE : Algorithms for Data Guided Business Intelligence
+DESCRIPTION : DISTANCE EDUCATION COURSE: Details for DE tuition and fee charges, please see https://treasurer.ofb.ncsu.edu/cashier/tuition/de.ph
+PRE-REQUISITES : ONLY on campus students with graduate standing in Computer Networking [Computer Science or Electrical Engineering] or Computer Science may register in this course.<p>Departmental Approval Required
+OFFERED : {'Spring 2017': [u'Samatova,Nagiza Faridovna']}
+DISTANCE EDUCATION : True
+
+ID : CSC 801
+TITLE : Seminar in Computer Science
+DESCRIPTION : Faculty and graduate student research presentations and discussions centered around current research problems in Computer Science and advanced theories in these areas. Students are expected to make presentations of published works and, depending onthe course credit received and their academic degree progress, present their own research results. Critical discussions of the various research approaches and results and their relationships based on the presentations and additional readings and research. Departmental Approval Required.
+PRE-REQUISITES : Graduate standing
+OFFERED : {'Spring 2017': [u'Mueller,Rainer Frank', u'Chirkova,Rada Yuryevna', u'Sullivan,Vida Blair Dowling', u'Kloster PhD,Kyle Anthony', u'Williams,Laurie A', u'Wright,David R']}
+DISTANCE EDUCATION : False
+
+ID : CSC 830
+TITLE : Doctoral Independent Study
+DESCRIPTION : Individual investigation of advanced topics under the direction of member[s] of the graduate faculty.
+PRE-REQUISITES : None
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 885
+TITLE : Doctoral Supervised Teaching
+DESCRIPTION : Teaching experience under the mentorship of faculty who assist the student in planning for the teaching assignment, observe and provide feedback to the student during the teaching assignment, and evaluate the student upon completion of the assignment.
+PRE-REQUISITES : Doctoral studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 890
+TITLE : Doctoral Preliminary Exam
+DESCRIPTION : For students who are preparing for and taking written and/or oral preliminary exams.
+PRE-REQUISITES : Doctoral studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 893
+TITLE : Doctoral Supervised Research
+DESCRIPTION : Instruction in research and research under the mentorship of a member of the Graduate Faculty.
+PRE-REQUISITES : Doctoral studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 895
+TITLE : Doctoral Dissertation Research
+DESCRIPTION : Dissertation research
+PRE-REQUISITES : Doctoral studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
+ID : CSC 899
+TITLE : Doctoral Dissertation Preparation
+DESCRIPTION : For students who have completed all credit hour, full-time enrollment, preliminary examination, and residency requirements for the doctoral degree, and are writing and defending their dissertations.
+PRE-REQUISITES : Doctoral studen
+OFFERED : {'Spring 2017': []}
+DISTANCE EDUCATION : False
+
