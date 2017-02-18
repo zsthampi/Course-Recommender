@@ -1,0 +1,59 @@
+<dataSource name="gd.db">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="2.6">
+    <schema id="1">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="gd" />
+    <column id="3" parent="2" name="name">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="4" parent="2" name="section">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="5" parent="2" name="instructor">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="6" parent="2" name="semester">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="7" parent="2" name="as">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="8" parent="2" name="bs">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="9" parent="2" name="cs">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="10" parent="2" name="ds">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="11" parent="2" name="fs">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="12" parent="2" name="s">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="13" parent="2" name="u">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="14" parent="2" name="in">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="15" parent="2" name="la">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="16" parent="2" name="au">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="17" parent="2" name="nr">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="18" parent="2" name="w">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="19" parent="2" name="total">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+  </database-model>
+</dataSource>
