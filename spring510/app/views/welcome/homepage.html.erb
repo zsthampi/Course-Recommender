@@ -78,7 +78,7 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To NC STATE!</div>
+                <div class="intro-lead-in">Welcome To NC STATE UNIVERSITY!</div>
                 <div class="intro-heading">It's Nice To Meet You</div>
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
@@ -133,20 +133,25 @@
                 </div>
             </div>
             <div class="row">
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
+
+                    
+
+                        <%= link_to courses_path do %>
+                            <img src="assets/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <% end %>
+
+                        
+                  
                     <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
+                        <h4>Courses Lists</h4>
                         <p class="text-muted">Graphic Design</p>
                     </div>
                 </div>
+
+
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
