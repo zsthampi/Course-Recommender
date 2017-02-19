@@ -111,12 +111,6 @@ P.login('zsthampi@ncsu.edu', 'piazza').then(function(user) {
 					console.log("!!!ERROR!!!");
 				}
 				try {
-					console.log(content.instructorResponse.content);
-					console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-				} catch(err) {
-					console.log("!!!ERROR!!!");
-				}
-				try {
 					console.log(content.studentResponse.content);
 					console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 				} catch(err) {
