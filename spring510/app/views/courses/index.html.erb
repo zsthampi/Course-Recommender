@@ -68,12 +68,13 @@
 
             </div>
             <div class="col-md-5">
-              <%= link_to course do%>  
-              <h3 style="a:hover{background-color: yellow;}"><%= course.cid %></h3>
-              <h4><%= course.name %></h4>
+              <%= link_to course,:style=> 'color: black;' do%> 
+              
+                <h3><%= course.cid %></h3>
+                <h4><%= course.name %></h4>
+              
               <%end%>
               <p><%= course.description %></p>
-              <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
           </div>
           <td><%= course.syllabus %></td>

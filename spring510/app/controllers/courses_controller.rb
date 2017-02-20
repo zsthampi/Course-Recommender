@@ -4,13 +4,14 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-    #@courses = Course.all
-    @courses = Course.paginate(:page => params[:page],:per_page => 2)
+    
+    @courses = Course.paginate(:page => params[:page],:per_page => 5)
   end
 
   # GET /courses/1
   # GET /courses/1.json
   def show
+    @courses = Course.all
   end
 
   # GET /courses/new
