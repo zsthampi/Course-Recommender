@@ -5,6 +5,15 @@ from gensim.models.doc2vec import LabeledSentence, Doc2Vec
 import random
 import re
 import nltk
+import urllib
+from pdfminer.pdfparser import PDFParser
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfpage import PDFPage, PDFTextExtractionNotAllowed
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.pdfdevice import PDFDevice
+from pdfminer.layout import LAParams
+from pdfminer.converter import PDFPageAggregator, TextConverter
+from cStringIO import StringIO
 
 # Download the stop words from nltk
 # nltk.download("stopwords")
@@ -30,20 +39,58 @@ interested_words = {
 requirement = {'prof_rating':1,'grades':0.5,'content':0.5,'job':0,'workload':0.5}
 course_squared_errors = {}
 
+def extract_text_from_pdf(link):
+	try:
+		web_file = urllib.urlopen(link)
+		fp = open('temp.pdf','w')
+		fp.write(web_file.read())
+		fp.close()
+
+		# Open a PDF file.
+		fp = open('temp.pdf','r')
+		# Create a PDF parser object associated with the file object.
+		parser = PDFParser(fp)
+		retstr = StringIO()
+		# Set parameters for analysis.
+		laparams = LAParams()
+		# Create a PDF resource manager object that stores shared resources.
+		rsrcmgr = PDFResourceManager()
+		# Create a PDF device object.
+		device = TextConverter(rsrcmgr, retstr, codec='ascii', laparams=laparams)
+		# Create a PDF interpreter object.
+		interpreter = PDFPageInterpreter(rsrcmgr, device)
+		# Process each page contained in the document.
+		pagenos = set()
+		for page in PDFPage.get_pages(fp, pagenos, maxpages=0, caching=True, check_extractable=True):
+		    interpreter.process_page(page)
+		device.close()
+		str = retstr.getvalue()
+		retstr.close()
+		return str.split('\n')
+		fp.close()
+	except:
+		return []
+
 # Check if the JSON data is passed
 if len(sys.argv) < 2:
 	print "Pass the JSON input"
 else:
 	data = json.loads(sys.argv[1])
 	for course in data.keys():
+		data_extracted_from_pdf = []
 		for index,content in enumerate(data[course]):
 			# Add code here to read and parse the attachments 
 			data[course][index] = data[course][index].encode('ascii','ignore')
 			data[course][index] = BeautifulSoup(content,"html5lib").get_text(' ').encode('ascii','ignore')
+			for a in BeautifulSoup(content,"html5lib").findAll('a'):
+				if '.pdf' in a['href']:
+					data_extracted_from_pdf += extract_text_from_pdf(a['href'])
 			# Process data - remove special characters and convert to lower case
 			data[course][index] = re.sub('[^A-Za-z0-9 ]+', '', data[course][index].replace('-',' ').replace('_',' ')).lower()
+		data[course] = data[course] + data_extracted_from_pdf
 			
-	
+	# print str(data)
+
 	# Iterate through each course
 	for course in data.keys():
 		# Doc2Vec requires LabeledSentence objects as input.
@@ -82,10 +129,6 @@ else:
 
 				print "Category:"+category+":"+str(rating)+":"+str(requirement[category])
 				squared_error += (rating - requirement[category])**2
-
-				# print str(positive_count)+":"+str(negative_count)+":"+str((positive_count+1)/(positive_count+negative_count+1))
-				# print str(labeled_train_data)
-				# print([each[0] for each in model.most_similar('youtube',topn=25)])
 
 			course_squared_errors[squared_error] = course
 
