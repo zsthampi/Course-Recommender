@@ -1,0 +1,1 @@
+json.partial! "gradedists/gradedist", gradedist: @gradedist

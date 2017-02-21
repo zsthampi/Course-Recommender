@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :gradedists
   resources :courses
   get 'welcome/homepage'
   root 'welcome#homepage'

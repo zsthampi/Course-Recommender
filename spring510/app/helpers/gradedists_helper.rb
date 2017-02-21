@@ -1,0 +1,2 @@
+module GradedistsHelper
+end

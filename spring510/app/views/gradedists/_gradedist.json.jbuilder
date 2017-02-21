@@ -1,0 +1,2 @@
+json.extract! gradedist, :id, :cid, :section, :instructor, :semester, :integer, :as, :bs, :cs, :ds, :fs, :s, :u, :in, :la, :au, :nr, :w, :total, :created_at, :updated_at
+json.url gradedist_url(gradedist, format: :json)

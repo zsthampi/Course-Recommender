@@ -1,0 +1,1 @@
+json.array! @gradedists, partial: 'gradedists/gradedist', as: :gradedist

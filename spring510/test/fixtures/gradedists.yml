@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cid: 1
+  section: 1
+  instructor: MyString
+  semester: MyString
+  integer: MyString
+  as: 1
+  bs: 1
+  cs: 1
+  ds: 1
+  fs: 1
+  s: 1
+  u: 1
+  in: 1
+  la: 1
+  au: 1
+  nr: 1
+  w: 1
+  total: 1
+
+two:
+  cid: 1
+  section: 1
+  instructor: MyString
+  semester: MyString
+  integer: MyString
+  as: 1
+  bs: 1
+  cs: 1
+  ds: 1
+  fs: 1
+  s: 1
+  u: 1
+  in: 1
+  la: 1
+  au: 1
+  nr: 1
+  w: 1
+  total: 1

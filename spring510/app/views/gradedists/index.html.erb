@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Grade Distribution</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cid</th>
+      <th>Section</th>
+      <th>Instructor</th>
+      <th>Semester</th>
+      <th>As</th>
+      <th>Bs</th>
+      <th>Cs</th>
+      <th>Ds</th>
+      <th>Fs</th>
+      <th>S</th>
+      <th>U</th>
+      <th>In</th>
+      <th>La</th>
+      <th>Au</th>
+      <th>Nr</th>
+      <th>W</th>
+      <th>Total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gradedists.each do |gradedist| %>
+      <tr>
+        <td><%= gradedist.cid %></td>
+        <td><%= gradedist.section %></td>
+        <td><%= gradedist.instructor %></td>
+        <td><%= gradedist.semester %></td>
+        <td><%= gradedist.as %></td>
+        <td><%= gradedist.bs %></td>
+        <td><%= gradedist.cs %></td>
+        <td><%= gradedist.ds %></td>
+        <td><%= gradedist.fs %></td>
+        <td><%= gradedist.s %></td>
+        <td><%= gradedist.u %></td>
+        <td><%= gradedist.in %></td>
+        <td><%= gradedist.la %></td>
+        <td><%= gradedist.au %></td>
+        <td><%= gradedist.nr %></td>
+        <td><%= gradedist.w %></td>
+        <td><%= gradedist.total %></td>
+        <td><%= link_to 'Show', gradedist %></td>
+        <td><%= link_to 'Edit', edit_gradedist_path(gradedist) %></td>
+        <td><%= link_to 'Destroy', gradedist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gradedist', new_gradedist_path %>

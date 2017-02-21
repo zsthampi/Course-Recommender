@@ -1,0 +1,102 @@
+<%= form_for(gradedist) do |f| %>
+  <% if gradedist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gradedist.errors.count, "error") %> prohibited this gradedist from being saved:</h2>
+
+      <ul>
+      <% gradedist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cid %>
+    <%= f.number_field :cid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section %>
+    <%= f.number_field :section %>
+  </div>
+
+  <div class="field">
+    <%= f.label :instructor %>
+    <%= f.text_field :instructor %>
+  </div>
+
+  <div class="field">
+    <%= f.label :semester %>
+    <%= f.text_field :semester %>
+  </div>
+
+  <div class="field">
+    <%= f.label :as %>
+    <%= f.number_field :as %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bs %>
+    <%= f.number_field :bs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cs %>
+    <%= f.number_field :cs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ds %>
+    <%= f.number_field :ds %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fs %>
+    <%= f.number_field :fs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :s %>
+    <%= f.number_field :s %>
+  </div>
+
+  <div class="field">
+    <%= f.label :u %>
+    <%= f.number_field :u %>
+  </div>
+
+  <div class="field">
+    <%= f.label :in %>
+    <%= f.number_field :in %>
+  </div>
+
+  <div class="field">
+    <%= f.label :la %>
+    <%= f.number_field :la %>
+  </div>
+
+  <div class="field">
+    <%= f.label :au %>
+    <%= f.number_field :au %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nr %>
+    <%= f.number_field :nr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :w %>
+    <%= f.number_field :w %>
+  </div>
+
+  <div class="field">
+    <%= f.label :total %>
+    <%= f.number_field :total %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
