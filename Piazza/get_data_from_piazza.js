@@ -2,6 +2,7 @@
 
 var P = require('piazza-api');
 var async = require('async');
+var PythonShell = require('python-shell');
 
 var cscHelp;
 // A dictionary of lists
@@ -67,7 +68,8 @@ promise3.then(function() {
 	folders.forEach(function(folder) {
 		var contents = []
 		data[folder].forEach(function(content) {
-			contents.push(content.title+content.content);
+			contents.push(content.title);
+			contents.push(content.content);
 			// console.log(data[folder]);
 			try {
 				contents.push(content.instructorResponse.content);
@@ -84,5 +86,11 @@ promise3.then(function() {
 		});
 		data[folder] = contents;
 	});
-	console.log(JSON.stringify(data));
+
+	var options = { args: [JSON.stringify(data)] };
+	PythonShell.run('./text_mine.py', options, function (err,results) {
+		if (err) console.log(err);
+		console.log(results);
+	});
+	// console.log(JSON.stringify(data));
 });

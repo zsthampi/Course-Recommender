@@ -1,4 +1,8 @@
 // Reference : https://www.npmjs.com/package/piazza-api
+// Installation - 
+// npm install -g piazza-api
+// npm install -g async
+// npm install -g python-shell
 
 var P = require('piazza-api');
 P.login('zsthampi@ncsu.edu', 'piazza').then(function(user) {
