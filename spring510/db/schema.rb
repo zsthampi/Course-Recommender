@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170221155009) do
+ActiveRecord::Schema.define(version: 20170223162143) do
 
   create_table "courses", force: :cascade do |t|
     t.integer  "cid"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20170221155009) do
     t.string   "section"
     t.string   "instructor"
     t.string   "semester"
-    t.integer  "as"
+    t.integer  "a"
     t.integer  "bs"
     t.integer  "cs"
     t.integer  "ds"

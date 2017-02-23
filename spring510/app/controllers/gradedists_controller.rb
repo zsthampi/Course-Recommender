@@ -4,7 +4,9 @@ class GradedistsController < ApplicationController
   # GET /gradedists
   # GET /gradedists.json
   def index
-    @gradedists = Gradedist.all
+    @distByCourse = Gradedist.group(:cid).select("cid, SUM(gradedists.a) AS a, SUM(gradedists.bs) AS bs, SUM(gradedists.cs) AS cs, SUM(gradedists.total) AS total")
+
+    @distByInstructor = Gradedist.group(:instructor).select("instructor, SUM(gradedists.a) AS a, SUM(gradedists.bs) AS bs, SUM(gradedists.cs) AS cs, SUM(gradedists.total) AS total")
   end
 
   # GET /gradedists/1
