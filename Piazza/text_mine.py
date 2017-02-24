@@ -31,13 +31,12 @@ interested_words = {
 # Course Content
 'content':['project','projects','research','researches','work','thesis','paper','papers','quiz','quizzes','homework','homeworks'],
 # Job Prospects 
-'job':['intern','internship','job','jobs','full','time','industry','industries','business','businesses','partner','partners'],
+'job':['intern','internship','job','jobs','full','time','industry','industries','business','businesses','partner','partners','interview','interviews'],
 # Workload
 'workload':['load','work','assignment','assignments','project','projects','homework','homeworks','week','weekly','month','monthly','deadline','deadlines','extension','extensions']
 }
 
-requirement = {'prof_rating':1,'grades':0.5,'content':0.5,'job':0,'workload':0.5}
-course_squared_errors = {}
+course_squared_errors = []
 
 def extract_text_from_pdf(link):
 	try:
@@ -72,10 +71,13 @@ def extract_text_from_pdf(link):
 		return []
 
 # Check if the JSON data is passed
-if len(sys.argv) < 2:
+if len(sys.argv) < 3:
 	print "Pass the JSON input"
 else:
 	data = json.loads(sys.argv[1])
+	# requirement = {'prof_rating':1,'grades':0.5,'content':0.5,'job':0,'workload':0.5}
+	requirement = json.loads(sys.argv[2])
+	# print str(requirement)
 	for course in data.keys():
 		data_extracted_from_pdf = []
 		for index,content in enumerate(data[course]):
@@ -98,7 +100,10 @@ else:
 		labeled_train_data = []
 		complete_word_list = set()
 		for index,sentence in enumerate(data[course]):
+			# Make a list excluding the stop words 
 			words_list = list(set(sentence.split(' '))-stopwords)
+			# List keeping all words 
+			# words_list = sentence.split(' ')
 			complete_word_list = complete_word_list.union(set(words_list))
 			labeled_train_data.append(LabeledSentence(words_list,['train_data_'+str(index)]))
 
@@ -127,10 +132,13 @@ else:
 				negative_count = float(len(set(words_from_model).intersection(set(negative_words))))
 				rating = (positive_count+1)/(positive_count+negative_count+1)
 
-				print "Category:"+category+":"+str(rating)+":"+str(requirement[category])
+				# print "Category:"+category+":"+str(rating)+":"+str(requirement[category])
 				squared_error += (rating - requirement[category])**2
 
-			course_squared_errors[squared_error] = course
+			course_squared_errors.append([course,squared_error])
 
-	print str(course_squared_errors)
+	# Sort courses on increasing Squared Error
+	course_squared_errors = sorted(course_squared_errors,key=lambda x:x[1])
+	print course_squared_errors
+
 

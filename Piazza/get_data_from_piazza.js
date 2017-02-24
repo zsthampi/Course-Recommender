@@ -1,8 +1,20 @@
 // Reference : https://www.npmjs.com/package/piazza-api
 
+// Installation - 
+// Install nodeJS
+// npm install -g piazza-api
+// npm install -g async
+// npm install -g python-shell
+
+// Call 
+// node get_data_from_piazza.js '{"prof_rating":1,"grades":0.5,"content":0.5,"job":0,"workload":0.5}'
+
 var P = require('piazza-api');
 var async = require('async');
 var PythonShell = require('python-shell');
+
+var requirement = process.argv[2]
+// console.log(requirement)
 
 var cscHelp;
 // A dictionary of lists
@@ -87,7 +99,7 @@ promise3.then(function() {
 		data[folder] = contents;
 	});
 
-	var options = { args: [JSON.stringify(data)] };
+	var options = { args: [JSON.stringify(data),requirement] };
 	PythonShell.run('./text_mine.py', options, function (err,results) {
 		if (err) console.log(err);
 		console.log(results);
