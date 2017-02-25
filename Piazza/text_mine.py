@@ -1,3 +1,10 @@
+# Installation 
+# sudo easy_install pip 
+# pip install --install-options="/usr/local/" BeautifulSoup
+# pip install --install-options="/usr/local/" gensim --ignore-installed
+# pip install --install-options="/usr/local/" nltk --ignore-installed
+# pip install --install-options="/usr/local/" pdfminer --ignore-installed
+
 import sys,os
 import json
 from bs4 import BeautifulSoup
