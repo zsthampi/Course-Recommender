@@ -102,7 +102,7 @@ promise3.then(function() {
 	var options = { args: [JSON.stringify(data),requirement] };
 	PythonShell.run('./text_mine.py', options, function (err,results) {
 		if (err) console.log(err);
-		console.log(results);
+		console.log(results[0]);
 	});
 	// console.log(JSON.stringify(data));
 });
