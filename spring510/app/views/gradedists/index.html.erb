@@ -1,8 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Grade Distribution</h1>
-
-
 <%
 def getId(cid)
   id = Course.where(cid: cid).select("id").take
@@ -79,5 +77,3 @@ end
     <% end %>
   </tbody>
 </table>
-
-<%= link_to 'New Gradedist', new_gradedist_path %>

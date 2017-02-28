@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style type="text/css">
+		.slider{
+			height: 30px;
+		}
+		.range{
+			width: 30%;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function submit(){
+			prof_rating = document.getElementById("prof_rating").value / 100.0;
+			grades = document.getElementById("grades").value / 100.0;
+			content = document.getElementById("content").value / 100.0;
+			job = document.getElementById("job").value / 100.0;
+			workload = document.getElementById("workload").value / 100.0;
+			
+			str2 = "http://localhost:3000/slider/result?str=" + "{\"prof_rating\":" + prof_rating + ",\"grades\":" + grades +",\"content\":" +
+			content + ",\"job\":" + job +",\"workload\":" + workload +"}";
+
+			str = "localhost:3000/slider/result";
+
+			document.getElementById("aa").innerHTML = str;
+			//window.open("http://localhost:3000/slider/result", "_self");
+			window.open(str2 , "_self")
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<h2>TEXT MINING</h2>
+	<p>Please select your preferences on what other people thought about courses on the following categories.</p>
+	<div class="range">
+		Professor Rating:
+		<input class="slider" id="prof_rating" type="range" min="0" max="100" value="50" step="2" onChange="sliderChange(this.value)" width="10%"/>
+		Grades:
+		<input class="slider" id="grades" type="range" min="0" max="100" value="50" step="2" onChange="sliderChange(this.value)" />
+		Content:
+		<input class="slider" id="content" type="range" min="0" max="100" value="50" step="2"  onChange="sliderChange(this.value)" />
+		Job Prospectives:
+		<input class="slider" id="job" type="range" min="0" max="100" value="50" step="2" onChange="sliderChange(this.value)" />
+		Work Load:
+		<input class="slider" id="workload" type="range" min="0" max="100" value="50" step="2"  onChange="sliderChange(this.value)" />
+		<input type="submit" name="submit" onclick="submit()" >
+		<span id="aa">222</span>
+	</div>
+</body>
+
+</html>

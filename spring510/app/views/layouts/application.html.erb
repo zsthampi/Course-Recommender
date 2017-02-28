@@ -13,7 +13,7 @@
     
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
-    <title>Spring510</title>
+    <title>NCSU Course Helper</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -30,7 +30,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <%= link_to root_path do %>
+                <span class="navbar-brand page-scroll">Course Helper</span>
+                <%end%>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
