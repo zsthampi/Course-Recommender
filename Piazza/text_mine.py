@@ -1,10 +1,3 @@
-# Installation 
-# sudo easy_install pip 
-# pip install --install-options="/usr/local/" BeautifulSoup
-# pip install --install-options="/usr/local/" gensim --ignore-installed
-# pip install --install-options="/usr/local/" nltk --ignore-installed
-# pip install --install-options="/usr/local/" pdfminer --ignore-installed
-
 import sys,os
 import json
 from bs4 import BeautifulSoup
@@ -81,9 +74,13 @@ def extract_text_from_pdf(link):
 if len(sys.argv) < 3:
 	print "Pass the JSON input"
 else:
-	data = json.loads(sys.argv[1])
-	# requirement = {'prof_rating':1,'grades':0.5,'content':0.5,'job':0,'workload':0.5}
-	requirement = json.loads(sys.argv[2])
+	try:
+		data = json.loads(sys.argv[1])
+		# requirement = {'prof_rating':1,'grades':0.5,'content':0.5,'job':0,'workload':0.5}
+		requirement = json.loads(sys.argv[2])
+	except:
+		print "Error in Input Data"
+		sys.exit()
 	# print str(requirement)
 	for course in data.keys():
 		data_extracted_from_pdf = []
@@ -142,7 +139,7 @@ else:
 				# print "Category:"+category+":"+str(rating)+":"+str(requirement[category])
 				squared_error += (rating - requirement[category])**2
 
-			course_squared_errors.append([course,squared_error])
+			course_squared_errors.append([str(course),squared_error])
 
 	# Sort courses on increasing Squared Error
 	course_squared_errors = sorted(course_squared_errors,key=lambda x:x[1])

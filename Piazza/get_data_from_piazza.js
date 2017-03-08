@@ -35,7 +35,11 @@ var promise1 = new Promise(function(resolve,reject) {
 	// Get the contents of each folder 
 	});
 	resolve();
+	}).catch(function(error) {
+		console.log("OOPS! : ",error);
 	});
+}).catch(function(error) {
+	console.log("OOPS! : ",error);
 });
 
 var promise2 = new Promise(function(resolve,reject) {
@@ -51,8 +55,14 @@ var promise2 = new Promise(function(resolve,reject) {
 		});
 		Promise.all(promise_array).then(function() {
 			resolve();
+		}).catch(function(error) {
+			console.log("OOPS! : ",error);
 		});
+	}).catch(function(error) {
+		console.log("OOPS! : ",error);
 	});
+}).catch(function(error) {
+	console.log("OOPS! : ",error);
 });
 
 var promise3 = new Promise(function(resolve,reject) {
@@ -65,6 +75,8 @@ var promise3 = new Promise(function(resolve,reject) {
 					feedItem.toContent().then(function(content) {
 						data[folder][index] = content;
 						resolve();
+					}).catch(function(error) {
+						console.log("OOPS! : ",error);
 					});
 				}));
 				// return feedItem_to_content;
@@ -72,8 +84,14 @@ var promise3 = new Promise(function(resolve,reject) {
 		});
 		Promise.all(promise_array).then(function() {
 			resolve();
+		}).catch(function(error) {
+			console.log("OOPS! : ",error);
 		});
+	}).catch(function(error) {
+		console.log("OOPS! : ",error);
 	});
+}).catch(function(error) {
+	console.log("OOPS! : ",error);
 });
 
 promise3.then(function() {
@@ -105,4 +123,6 @@ promise3.then(function() {
 		console.log(results[0]);
 	});
 	// console.log(JSON.stringify(data));
+}).catch(function(error) {
+	console.log("OOPS! : ",error);
 });
