@@ -57,11 +57,11 @@
             <div class="col-md-7">
 
               <%=
-              if FileTest.exist?("#{Rails.root}/app/assets/images/#{course.imgpath}")
-                image_tag(course.imgpath , :class =>"img-responsive")
-              else
+              #if FileTest.exist?("#{Rails.root}/app/assets/images/#{course.imgpath}")
+              #  image_tag(course.imgpath , :class =>"img-responsive")
+              #else
                 image_tag('http://placehold.it/700x300' , :class =>"img-responsive")
-              end
+              #end
               %>
 
               <!--<img class="img-responsive" src="http://placehold.it/700x300" alt="">-->

@@ -7,10 +7,13 @@ def getId(cid)
 end
 %>
 
+
+
+
 <table class=" table table-striped sortable">
   <thead>
     <tr>
-      <th>Rank</th>
+      
       <th>Course ID</th>
       <th>A%</th>
       <th>B%</th>
@@ -27,7 +30,7 @@ end
      i += 1
     %>
       <tr>
-        <td ><%= i %></td>
+        
         
         <td><%= 
           if(getId(d.cid)!=nil)
@@ -50,7 +53,7 @@ end
 <table class=" table table-striped sortable">
   <thead>
     <tr>
-      <th>Rank</th>
+      
       <th>Instructor</th>
       <th>A%</th>
       <th>B%</th>
@@ -67,7 +70,7 @@ end
       i += 1
     %>
       <tr>
-      <td ><%= i %></td>
+      
         <td><%= d.instructor %></td>
         <td><%= d.a*100 / d.total %>%</td>
         <td><%= d.bs*100 / d.total %>%</td>

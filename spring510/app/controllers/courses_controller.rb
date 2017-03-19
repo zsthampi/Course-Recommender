@@ -1,6 +1,7 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
 
+
   # GET /courses
   # GET /courses.json
   def index  
@@ -12,7 +13,11 @@ class CoursesController < ApplicationController
   def show
     @courses = Course.all
     @grades = Gradedist.all
+    @post = Post.new
+    @thePost = Post.all
   end
+
+
 
   # GET /courses/new
   def new

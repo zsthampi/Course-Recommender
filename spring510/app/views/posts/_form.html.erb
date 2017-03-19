@@ -1,0 +1,14 @@
+        <%= form_for(@post) do |f| %>
+        <div class="well">
+          <h4>PICK a nickname:</h4>
+            <div class="form-group">
+              <%= f.text_field :user , class: "form-control",  rows: "3"%>
+            </div>
+            <h4>Leave a Comment:</h4>
+            <div class="form-group">
+              <%= f.text_area :content , class: "form-control",  rows: "3"%>
+            </div>   
+            <%= f.hidden_field :cid, value: @course.cid %>
+            <%= f.submit "Add New Comment", class: "btn btn-primary" %>
+        </div>
+        <% end %>

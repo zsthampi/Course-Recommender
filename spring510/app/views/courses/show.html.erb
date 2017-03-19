@@ -28,6 +28,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
+
+
     </head>
 
     <body>
@@ -58,11 +60,11 @@
 
                 <!-- Preview Image -->
                 <%=
-                if FileTest.exist?("#{Rails.root}/app/assets/images/#{@course.imgpath}")
-                    image_tag(@course.imgpath , :class =>"img-responsive")
-                else
-                    image_tag('http://placehold.it/700x300' , :class =>"img-responsive")
-                end
+                #if FileTest.exist?("#{Rails.root}/app/assets/images/#{@course.imgpath}")
+                  #  image_tag(@course.imgpath , :class =>"img-responsive")
+                #else
+                image_tag('http://placehold.it/700x300' , :class =>"img-responsive")
+                #end
                 %>
                 <hr>
 
@@ -81,88 +83,95 @@
                         </tr>
                     </thead>
                     <tbody class="table-hover">
-                        <% tmp = @grades.select{|g| g.cid == @course.cid}.each do |g|%>
-                            <tr>
-                                <td class="text-left"><%=g.semester%></td>
-                                <td class="text-left"><%= (g.instructor).split(',')[0]  %></td>
-                                <td class="text-left"><%=g.a%></td>
-                                <td class="text-left"><%=g.total%></td>
-                                <td class="text-left"><%= (g.a*100)/g.total %>%</td>
-                            </tr>
+                        <% @grades.select{|g| g.cid == @course.cid}.each do |g|%>
+                        <tr>
+                            <td class="text-left"><%=g.semester%></td>
+                            <td class="text-left"><%= (g.instructor).split(',')[0]  %></td>
+                            <td class="text-left"><%=g.a%></td>
+                            <td class="text-left"><%=g.total%></td>
+                            <td class="text-left"><%= (g.a*100)/g.total %>%</td>
+                        </tr>
                         <%end%>
                     </tbody>
                 </table>
-
-
-                <p>
-                   
-
-
-                </p>
-                
-
                 <hr>
-
                 <!-- Blog Comments -->
 
                 <!-- Comments Form -->
-                <div class="well">
-                    <h4>Leave a Comment:</h4>
-                    <form role="form">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
                 <hr>
 
                 <!-- Posted Comments -->
+                <%= @course.cid %>
+                <%= form_for @post, :url => posts_path, :html => {:method => :post} do |f| %>
+                <div class="well">
+                  <h4>PICK a nickname:</h4>
+                  <div class="form-group">
+                      <%= f.text_field :user , class: "form-control",  rows: "3"%>
+                  </div>
+                  <h4>Leave a Comment:</h4>
+                  <div class="form-group">
+                      <%= f.text_area :content , class: "form-control",  rows: "3"%>
+                  </div>   
+                  <%= f.hidden_field :cid, value: @course.cid %>
+                  <%= f.submit "Add New Comment", class: "btn btn-primary" %>
+              </div>
+              <% end %>
 
-                <!-- Comment -->
+              <!-- Comment -->
+              
+
+
+                <% @thePost.select{|g| g.cid == @course.cid}.each do |g|%>
                 <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Start Bootstrap
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
+                 <!-- <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/64x64" alt="">
+                </a>-->
+                <div class="media-body">
+                <h4 class="media-heading"><%=g.user%>
+                        <small><%=g.created_at%></small>
+                    </h4>
+                    <%=g.content%>
                 </div>
+                </div>
+                <%end%>
 
-                <!-- Comment -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Start Bootstrap
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        <!-- Nested Comment -->
-                        <div class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/64x64" alt="">
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Nested Start Bootstrap
-                                    <small>August 25, 2014 at 9:30 PM</small>
-                                </h4>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                            </div>
+
+
+            
+
+            <!-- Comment 
+
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/64x64" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Start Bootstrap
+                        <small>August 25, 2014 at 9:30 PM</small>
+                    </h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.-->
+                    <!-- Nested Comment 
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://placehold.it/64x64" alt="">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Nested Start Bootstrap
+                                <small>August 25, 2014 at 9:30 PM</small>
+                            </h4>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
-                        <!-- End Nested Comment -->
                     </div>
+                   
                 </div>
-
             </div>
+            -->
+             <!-- End Nested Comment -->
 
-            <!-- Blog Sidebar Widgets Column -->
-            <div class="col-md-4">
+        </div>
+
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
 
                 <!-- Blog Search Well 
                 <div class="well">
