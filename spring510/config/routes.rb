@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :gradedists
   resources :courses
+  resources :syllabuses
   #get 'welcome/homepage'
   get 'slider/index'
   root 'welcome#homepage'

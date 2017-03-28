@@ -15,6 +15,7 @@ class CoursesController < ApplicationController
     @grades = Gradedist.all
     @post = Post.new
     @thePost = Post.all
+    @syllabus = Syllabus.all
   end
 
 

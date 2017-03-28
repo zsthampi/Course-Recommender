@@ -75,7 +75,7 @@
                 <table class="table-fill">
                     <thead>
                         <tr>
-                            <th class="text-left">Term</th>
+                            <th class="text-left">Semester</th>
                             <th class="text-left">Professor</th>
                             <th class="text-left">A's</th>
                             <th class="text-left">Total</th>
@@ -96,6 +96,32 @@
                 </table>
                 <hr>
                 <!-- Blog Comments -->
+
+
+                <h2>Syllabus<h2>
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Semester</th>
+                            <th class="text-left">Professor</th>
+                            <th class="text-left">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <% @syllabus.select{|g| g.cid == @course.cid}.each do |g|%>
+                        <tr>
+                            <td class="text-left"><%=g.semester%></td>
+                            <td class="text-left"><%= g.prof %></td>
+                            <td class="text-left"><a href="http://<%= g.link %>"><%= g.link %></a></td>
+                        </tr>
+                        <%end%>
+                    </tbody>
+                </table>
+                <hr>
+
+                <%= link_to "Upload syallbus" , new_syllabus_path %>
+
+
 
                 <!-- Comments Form -->
                 <hr>

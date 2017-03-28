@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Syllabuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cid</th>
+      <th>Prof</th>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @syllabuses.each do |syllabus| %>
+      <tr>
+        <td><%= syllabus.cid %></td>
+        <td><%= syllabus.prof %></td>
+        <td><%= syllabus.link %></td>
+        <td><%= link_to 'Show', syllabus %></td>
+        <td><%= link_to 'Edit', edit_syllabus_path(syllabus) %></td>
+        <td><%= link_to 'Destroy', syllabus, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Syllabus', new_syllabus_path %>
